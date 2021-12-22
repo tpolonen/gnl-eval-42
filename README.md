@@ -8,9 +8,18 @@ Tests and validation for the Hive Helsinki GET_Next_Line project. This is not me
 4. `sh basic.sh`, `sh middle.sh`, `sh advanced.sh` to do the tests specified in the evaluation form with files that match.
 5. `./gnl_test -f` to test for error values.
 
+## Help?
+`./gnl-test -h`
+
 ## TODO
 * Currently doesn't test for multiple simultaneously open file descriptors.
+* Leaks-test is commented out in `main.c` - i
 * Doesn't actually make sure that output matches input.
 * No stress testing, or opening different files in the same FD repeatedly.
 * Doesn't check for single static value.
 * `BUFF_SIZE` is not modified during any of the tests.
+
+### Fun stuff
+`time ./gnl_test -l kapital`
+`time ./gnl_test -l kapital_nonl`
+You should aim for sub 0.3 runtime for both files.
