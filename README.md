@@ -13,7 +13,7 @@ Tests and validation for the Hive Helsinki GET_Next_Line project. This is not me
 
 ## TODO
 * Currently doesn't test for multiple simultaneously open file descriptors.
-* Leaks-test is commented out in `main.c` - i
+* Leaks-test is commented out in `main.c`
 * Doesn't actually make sure that output matches input.
 * No stress testing, or opening different files in the same FD repeatedly.
 * Doesn't check for single static value.
