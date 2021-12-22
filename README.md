@@ -6,10 +6,10 @@ Tests and validation for the Hive Helsinki GET_Next_Line project. This is not me
 2. Make sure that `BUFF_SIZE` in your `get_next_line.h` is set to `8`.
 3. `make`
 4. `sh basic.sh`, `sh middle.sh`, `sh advanced.sh` to do the tests specified in the evaluation form with files that match.
-5. `./gnl_test -f` to test for error values.
+5. `./test_gnl -f` to test for error values.
 
 ## Help?
-`./gnl-test -h`
+`./test_gnl -h`
 
 ## TODO
 * Currently doesn't test for multiple simultaneously open file descriptors.
@@ -20,8 +20,8 @@ Tests and validation for the Hive Helsinki GET_Next_Line project. This is not me
 * `BUFF_SIZE` is not modified during any of the tests.
 
 ### Fun stuff
-`time ./gnl_test -l kapital`
+`time ./test_gnl -l kapital`
 
-`time ./gnl_test -l kapital_nonl`
+`time ./test_gnl -l kapital_nonl`
 
-You should aim for sub 0.3 runtime for both files.
+You should aim for sub 1.0 runtime for both files.
