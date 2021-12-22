@@ -21,5 +21,7 @@ Tests and validation for the Hive Helsinki GET_Next_Line project. This is not me
 
 ### Fun stuff
 `time ./gnl_test -l kapital`
+
 `time ./gnl_test -l kapital_nonl`
+
 You should aim for sub 0.3 runtime for both files.
